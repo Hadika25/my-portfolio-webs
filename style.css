@@ -70,7 +70,7 @@ nav ul li a:hover::after{
 }
 .btn{
     color:#eff4fd;
-    font-size:15px;
+    font-size:25px;
     text-transform:uppercase;
     background: darkred;
     border-radius:500px;
@@ -102,8 +102,8 @@ nav ul li a:hover::after{
 .details p{
     color:darkmagenta;
     font-size: 15px ;
-    margin-top: 25px ;
-    margin-bottom: 35px ;
+    margin-top: 10px ;
+    margin-bottom: 40px ;
 }
 .image img{
     display:block;
