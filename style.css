@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width:100%;
+    background: linear-gradient(to top,rgba(0,0,0.5)50%,rgb(189, 189, 207)50%),url(picture.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 100px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+    cursor:pointer;
+}
+.logo::first-letter{
+    font-size: 40px;
+    border: 5px solid goldenrod;
+    border-right: transparent;
+    padding-left: 5px;
+    color: darkslateblue;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 20px;
+}
+nav ul li a{
+    color: darkslategrey;
+    position:relative;
+    padding:5px 0;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: darkslateblue;
+}
+
+nav ul li a::after{
+
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: darkred;
+    transition: .5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.btn{
+    color:#eff4fd;
+    font-size:15px;
+    text-transform:uppercase;
+    background: darkred;
+    border-radius:500px;
+    display:inline-block;
+    font-weight:500;
+    transition: all .4s ease-in-out;
+    border: 4px solid darkgoldenrod;
+}
+.btn:hover{
+    background: transparent ;
+    color:darkblue ;
+}
+.details{
+    position:absolute;
+    top:35%;
+    left:8%;
+
+}
+.details h1{
+    color: darkgoldenrod;
+    font-size: 40px;;
+    font-weight:700;
+    line-height:70px;
+}
+
+.details h1 span{
+    color: firebrick;
+}
+.details p{
+    color:darkmagenta;
+    font-size: 15px ;
+    margin-top: 25px ;
+    margin-bottom: 35px ;
+}
+.image img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    position:relative;
+
+}
+
+.image{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
